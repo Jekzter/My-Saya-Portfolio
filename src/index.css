@@ -1,0 +1,71 @@
+@import 'tailwindcss';
+@import '../public/fonts/css/clash-display.css';
+
+
+
+:root {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+
+#root {
+  width: 1920px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+/* #home-section {
+  background-color: rgb(255, 255, 255);
+  background-image: radial-gradient(at 0% 40%, rgb(163, 230, 53) 0, transparent 45%), radial-gradient(at 39% 49%, rgb(190, 242, 100) 0, transparent 45%), radial-gradient(at 100% 40%, rgb(132, 204, 22) 0, transparent 47%), radial-gradient(at 65% 49%, rgb(132, 204, 22) 0, transparent 30%);
+      
+} */
+
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(22, 31, 19);
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* * {
+  cursor: none;
+} */
+
+h1,
+h2, h3, h4, h5, h6 {
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: 'ClashDisplay-Semibold';
+  font-weight: bold;
+}
+
+p, a, ul, li {
+  font-family: "Montserrat", sans-serif;
+}
+
+

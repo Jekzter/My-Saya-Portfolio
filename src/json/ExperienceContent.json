@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "role": "Senior Frontend Engineer",
+        "company": "Vercel",
+        "period": "2023 — Present",
+        "type": "Full-time",
+        "description": "Led the redesign of the dashboard UI, improving performance by 40%. Built a component library adopted across 12 internal products.",
+        "tags": [
+            "React",
+            "Next.js",
+            "TypeScript",
+            "Tailwind"
+        ]
+    },
+    {
+        "id": 2,
+        "role": "UI Engineer",
+        "company": "Linear",
+        "period": "2021 — 2023",
+        "type": "Full-time",
+        "description": "Owned the issue tracking interface end-to-end. Implemented drag-and-drop kanban boards and real-time collaboration with WebSockets.",
+        "tags": [
+            "React",
+            "GraphQL",
+            "Framer Motion",
+            "Radix UI"
+        ]
+    },
+    {
+        "id": 3,
+        "role": "Frontend Developer",
+        "company": "Freelance",
+        "period": "2019 — 2021",
+        "type": "Contract",
+        "description": "Delivered 20+ client projects spanning landing pages, SaaS dashboards, and e-commerce storefronts.",
+        "tags": [
+            "Vue",
+            "GSAP",
+            "Nuxt.js",
+            "Figma"
+        ]
+    },
+    {
+        "id": 4,
+        "role": "Junior Developer",
+        "company": "Tokopedia",
+        "period": "2017 — 2019",
+        "type": "Full-time",
+        "description": "Maintained product listing features for one of Indonesia's largest e-commerce platforms. Optimized mobile web performance.",
+        "tags": [
+            "JavaScript",
+            "Vue",
+            "PHP",
+            "MySQL"
+        ]
+    }
+]

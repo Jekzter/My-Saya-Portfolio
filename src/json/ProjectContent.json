@@ -1,0 +1,89 @@
+{
+    "projects": [
+        {
+            "project-title": "Paragata Restaurant - One Platform for Stabilize Restaurant Operations",
+            "project-type": "Restaurant Management System",
+            "project-role": "Full-Stack Developer",
+            "project-year": 2025,
+            "project-category": [
+                "Software",
+                "Branding",
+                "Management System",
+                "Web Application"
+            ],
+            "project-thumbnail": [
+                "../../public/assets/images/project/paragata-project.png",
+                "../../public/assets/images/project/paragata-project-1.jpg",
+                "../../public/assets/images/project/paragata-project-2.jpg"
+            ]
+        },
+        {
+            "project-title": "AI Agent - A Modern Export-Import Supply Platform Enhanced with Gemini AI for Business Support",
+            "project-type": "Custom Software",
+            "project-role": "Full-Stack Developer",
+            "project-year": 2025,
+            "project-category": [
+                "Software",
+                "Solutions",
+                "Web Application",
+                "Artificial Intelligence"
+            ],
+            "project-thumbnail": [
+                "../../public/assets/images/project/exalna-project.jpg",
+                "../../public/assets/images/project/exalna-project-1.jpg",
+                "../../public/assets/images/project/exalna-project-3.jpg"
+            ]
+        },
+        {
+            "project-title": "Internet Cafe - A Modern Management Simulation for monitoring and managing a virtual internet cafe business",
+            "project-type": "Custom Software",
+            "project-role": "Front-End Developer",
+            "project-year": 2025,
+            "project-category": [
+                "Software",
+                "Solutions",
+                "Web Application",
+                "Management System"
+            ],
+            "project-thumbnail": [
+                "../../public/assets/images/project/cafe-management-project.jpg",
+                "../../public/assets/images/project/cafe-management-project-1.jpg",
+                "../../public/assets/images/project/cafe-management-project-2.jpg"
+            ]
+        },
+        {
+            "project-title": "Online Game Store - A Prototype of an Online Game Store with Ethereum Payment Integration",
+            "project-type": "Custom Software",
+            "project-role": "Front-End Developer",
+            "project-year": 2025,
+            "project-category": [
+                "Software",
+                "Solutions",
+                "Web Application",
+                "Blockchain"
+            ],
+            "project-thumbnail": [
+                "../../public/assets/images/project/stick-chain-project.jpg",
+                "../../public/assets/images/project/stick-chain-project-1.jpg",
+                "../../public/assets/images/project/stick-chain-project-2.jpg"
+            ]
+        },
+        {
+            "project-title": "Company Profile - Enchanced Business Profile for a Company and Boosting Online Presence",
+            "project-type": "Company Profile",
+            "project-role": "Front-End Developer",
+            "project-year": 2024,
+            "project-category": [
+                "Software",
+                "Solutions",
+                "Websites",
+                "Branding"
+            ],
+            "project-thumbnail": [
+                "../../public/assets/images/project/pring-astula-project.jpg",
+                "../../public/assets/images/project/pring-astula-project-1.jpg",
+                "../../public/assets/images/project/pring-astula-project-2.jpg"
+            ]
+        }
+    ]
+}
