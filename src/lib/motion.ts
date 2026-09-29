@@ -1,1 +1,1 @@
-export { motion, useTransform, useScroll, useInView  } from "framer-motion"; 
+export { motion, useTransform, useScroll, useInView, type Variants } from "framer-motion"; 

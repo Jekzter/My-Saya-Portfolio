@@ -2,7 +2,7 @@ import { motion, useInView } from "../lib/motion"
 import { useRef } from "react";
 import experiences from "../json/ExperienceContent.json";
 
-const ExperienceCard = ({
+export function ExperienceCard({
     exp,
     index,
     isLast,
@@ -10,7 +10,8 @@ const ExperienceCard = ({
     exp: (typeof experiences)[0];
     index: number;
     isLast: boolean;
-}) => {
+    }) {
+    // Scroll effect to top -80 after scrolling
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, margin: "-80px" });
 
@@ -32,14 +33,14 @@ const ExperienceCard = ({
             <div className={`${isLast ? "pb-0" : "pb-12"}`}>
                 <div className="mb-3 flex flex-wrap items-start justify-between gap-2">
                     <div className="text-start">
-                        <h3 className="text-5xl font-semibold text-white">{exp.role}</h3>
+                        <h3 className="text-xl sm:text-5xl font-semibold text-white">{exp.role}</h3>
                         <p className="mt-0.5 text-sm text-white/50">
                             <span className="font-medium text-lime-400">{exp.company}</span>
                             {" · "}
                             {exp.type}
                         </p>
                     </div>
-                    <span className="text-2xl font-semibold italic text-white">{exp.period}</span>
+                    <span className="text-sm sm:text-2xl font-semibold italic text-white">{exp.period}</span>
                 </div>
 
                 <p className="mb-4 max-w-lg text-sm text-start leading-relaxed text-white/55">
@@ -60,5 +61,3 @@ const ExperienceCard = ({
         </motion.div>
     );
 }
-
-export default ExperienceCard;

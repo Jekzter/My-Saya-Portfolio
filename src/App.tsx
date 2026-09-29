@@ -1,26 +1,18 @@
-// ================= Library
-
-
-// ================= Pages
-import HomeSection from "./pages/HomeSection"
-import ProjectSection from "./pages/ProjectSection"
-import ExperienceSection from "./pages/ExperienceSection"
-import Navbar from "./components/Navbar"
-import CustomCursor from "./components/CustomCursor"
-import ServiceSection from "./pages/ServiceSection"
+import { BrowserRouter, Routes, Route } from "react-router";
+import Layout from "./Layout";
+import HomePages from "./pages/home";
+import ProjectPages from "./pages/project";
 
 function App() {
-
   return (
-    <>
-      <CustomCursor />
-      <Navbar />
-      <HomeSection />
-      <ServiceSection />
-      <ExperienceSection />
-      <ProjectSection />
-
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<HomePages />} />
+          <Route path="/project/:id" element={<ProjectPages />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

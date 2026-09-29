@@ -1,11 +1,11 @@
 import { useCustomCursor } from "../helper/CustomCursor";
 
-const CustomCursor = () => {
+export function CustomCursor() {
     const { position } = useCustomCursor();
 
     return (
         <div
-            className="custom-cursor"
+            className="custom-cursor sm:flex hidden"
             style={{
                 left: `${position.x}px`,
                 top: `${position.y}px`,
@@ -21,5 +21,3 @@ const CustomCursor = () => {
         />
     )
 }
-
-export default CustomCursor;

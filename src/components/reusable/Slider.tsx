@@ -1,30 +1,33 @@
-// import type { JSX } from 'react';
-import { Navigation, A11y, Autoplay } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
-// import { type ReactNode } from 'react';
+import { Navigation, A11y, Autoplay } from "swiper/modules"
+import { Swiper, SwiperSlide } from "swiper/react"
 
 type SliderProps = {
-    Item?: Array<string>,
+    Item?: Array<string>
     className: string
 }
 
-const Slider = ({ Item, className }: SliderProps) => {
+export function Slider({ Item, className }: SliderProps) {
     return (
         <div className={className}>
             <Swiper
                 modules={[Navigation, A11y, Autoplay]}
-                spaceBetween={0}
-                slidesPerView={5}
+                spaceBetween={24}
+                slidesPerView={3}
                 loop={true}
                 speed={5000}
-                autoplay={{ delay: 0, disableOnInteraction: false, pauseOnMouseEnter: true }}
+                allowTouchMove={false}
+                autoplay={{ delay: 0, disableOnInteraction: false, pauseOnMouseEnter: false }}
+                breakpoints={{
+                    0: { spaceBetween: 24, slidesPerView: 2 },
+                    640: { spaceBetween: 32, slidesPerView: 3 },
+                    1024: { spaceBetween: 40, slidesPerView: 3 },
+                }}
             >
                 {Item?.map((item, index) => (
                     <SwiperSlide
                         key={index}
-                        className="text-white drop-shadow-xl font-medium rounded-2xl flex items-center gap-2"
+                        className="flex w-full py-2 items-center gap-2 rounded-2xl font-medium text-white drop-shadow-xl sm:gap-3"
                     >
-                        <i className="ri-circle-fill pr-32 text-sm"></i>
                         {item}
                     </SwiperSlide>
                 ))}
@@ -32,5 +35,3 @@ const Slider = ({ Item, className }: SliderProps) => {
         </div>
     )
 }
-
-export default Slider;
